@@ -1164,7 +1164,7 @@ input[type="password"]::-ms-clear {
             }
 
             function validateEmail(email) {
-                const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                const emailRegex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|org|net)$/i;
                 return emailRegex.test(email) && !email.includes(' ');
             }
 
