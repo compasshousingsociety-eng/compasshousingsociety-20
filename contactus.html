@@ -1044,7 +1044,7 @@
             }
             
             function validateGmail(email) {
-                const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+                const gmailRegex =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|in|org|net)$/i;
                 return gmailRegex.test(email);
             }
             
